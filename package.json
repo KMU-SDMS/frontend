@@ -1,0 +1,55 @@
+{
+  "name": "dormitory-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "기숙사 관리 앱: 택배 현황, 실시간 문의, 공지사항",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo run:ios",
+    "android": "expo run:android",
+    "web": "expo start --web",
+    "lint": "eslint \"app/**/*.{ts,tsx}\"",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "app/**/*.{ts,tsx,js,jsx,json,md}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "~19.0.10",
+    "@types/react-test-renderer": "^19.1.0",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "babel-preset-expo": "~13.0.0",
+    "eslint": "*",
+    "eslint-config-google": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-import": "*",
+    "jest": "^29.4.0",
+    "prettier": "*",
+    "react-test-renderer": "*",
+    "typescript": "~5.8.3"
+  },
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "^6.5.20",
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/native-stack": "^6.9.26",
+    "@reduxjs/toolkit": "*",
+    "expo": "53.0.22",
+    "expo-build-properties": "~0.14.8",
+    "react": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-redux": "*"
+  }
+}

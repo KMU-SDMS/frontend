@@ -1,0 +1,34 @@
+# Project-wide Cursor rules for AI assistance
+
+[general]
+language = "ko"
+style = "concise"
+
+[files]
+include = [
+  "app/**",
+  "App.tsx",
+  "index.ts",
+  "README.md"
+]
+exclude = [
+  "node_modules/**",
+  "android/**",
+  "ios/**",
+  "dist/**",
+  "build/**",
+  ".expo/**"
+]
+
+[assistant]
+# 코드 변경 전 파일 읽기 우선
+prefer_read_before_edit = true
+# 타입 안정성 중시
+enforce_typescript_strict = true
+# 린터/포매터 우선
+run_lint_on_save = true
+
+[commits]
+conventional_commits = true
+
+
